@@ -17,12 +17,15 @@ for(let i = 0; i < imgs.length; i++) {
     const randomImg = Math.floor(Math.random() * carsImages.length)
     imgs[i].src = carsImages[randomImg]
 }
+
 //Add text for h1 elements
 const headers = document.getElementsByTagName("h1");
 for (let i = 0; i < headers.length; i++){
     headers[i].innerText = "Merc is Love.";
-}	
+	
+    headers[i].style.fontSize = "x-large";
 
+}	
 
 //Add text for p elements
 const p = document.getElementsByTagName("p");
